@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jobs">
+            <div style="text-align: center;margin: auto">
+                <input id='name' placeholder="Enter Post Name" type="text">
+                <input id='post-title' placeholder="Enter Post Title" type="text">
+            </div>
+            <div class="label-div" style="margin: auto;text-align: center;">
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">Catagary Jobs</p>
+                <label for="">All India Govt Jobs <input class="label" type="checkbox" name="" id=""
+                        value="All India Govt Jobs"></label>
+                <label for="">Govt Jobs News <input class="label" type="checkbox" name="" id=""
+                        value="Govt Jobs News"></label>
+                <label for="">New Jobs <input class="label" type="checkbox" name="" id="" value="New Jobs"></label>
+                <label for="">Results <input class="label" type="checkbox" name="" id="" value="Results"></label>
+                <label for="">Answer Key <input class="label" type="checkbox" name="" id="" value="Answer Key"></label>
+                <label for="">Syllabus <input class="label" type="checkbox" name="" id="" value="Syllabus"></label>
+                <label for="">Admission <input class="label" type="checkbox" name="" id="" value="Admission"></label>
+                <label for="">Important <input class="label" type="checkbox" name="" id="" value="Important"></label>
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">Qualification Wise Jobs</p>
+                <label for="">10th Pass Jobs <input class="label" type="checkbox" name="" id=""
+                        value="10th Pass Jobs"></label>
+                <label for="">12th Pass Jobs <input class="label" type="checkbox" name="" id=""
+                        value="12th Pass Jobs"></label>
+                <label for="">Bank Jobs <input class="label" type="checkbox" name="" id="" value="Bank Jobs"></label>
+                <label for="">Diploma Jobs <input class="label" type="checkbox" name="" id="" value="Diploma Jobs"></label>
+                <label for="">Graduate Jobs <input class="label" type="checkbox" name="" id="" value="Graduate Jobs"></label>
+                <label for="">ITI Jobs <input class="label" type="checkbox" name="" id="" value="ITI Jobs"></label>
+                <label for="">Police Jobs <input class="label" type="checkbox" name="" id="" value="Police Jobs"></label>
+                <label for="">Post Graduate Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Post Graduate Jobs"></label>
+                <label for="">Railway Jobs <input class="label" type="checkbox" name="" id="" value="Railway Jobs"></label>
+                <label for="">Teaching Jobs <input class="label" type="checkbox" name="" id="" value="Teaching Jobs"></label>
+                <label for="">Technical Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Technical Jobs"></label>
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">State Wise Jobs</p>
+                <label for="">Bihar Jobs <input class="label" type="checkbox" name="" id="" value="Bihar Jobs"></label>
+                <label for="">Chhattisgarh Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Chhattisgarh Jobs"></label>
+                <label for="">Delhi Jobs <input class="label" type="checkbox" name="" id="" value="Delhi Jobs"></label>
+                <label for="">Haryana Jobs <input class="label" type="checkbox" name="" id="" value="Haryana Jobs"></label>
+                <label for="">MP Jobs <input class="label" type="checkbox" name="" id="" value="MP Jobs"></label>
+                <label for="">Rajasthan Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Rajasthan Jobs"></label>
+                <label for="">Uttar Pradesh Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Uttar Pradesh Jobs"></label>
+                <label for="">Uttarakhand Jobs <input class="label" type="checkbox" name="" id=""
+                        value="Uttarakhand Jobs"></label>
+            </div>
+            <textarea id="short-information" cols="30" rows="2" placeholder="Enter Short Infomation"></textarea>
+            <div style="margin: auto;text-align: center;">
+                <input id="title1" placeholder="Enter Notification Title 1" type="text">
+                <input id="title2" placeholder="Enter Notification Title 2" type="text">
+                <input id="title3" placeholder="Enter Notification Title 3" type="text">
+            </div>
+            <div class="date-fees">
+                <div class="im">
+                    <div>Important Dates</div>
+                    <textarea name="" id="date" cols="30" rows="5" placeholder="Enter Important Dates"></textarea>
+                </div>
+                <div class="im">
+                    <div>Application Fee</div>
+                    <textarea name="" id="fees" cols="30" rows="5" placeholder="Enter Exam Fees"></textarea>
+                </div>
+                <div class="im">
+                    <div>Age Limit as on <input type="date" name="" id="agedate"></div>
+                    <textarea name="" id="agelimit" cols="30" rows="5" placeholder="Enter Exam Fees"></textarea>
+                </div>
+            </div>
+            <div class="date-fees" style="border: 1px solid;">
+                <div class="im" style="border-right: 1px solid;">
+                    <table class="totalvacancy" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <th>Total Posts</th>
+                                <th>Post Name</th>
+                                <th>Vacancy Wise Post</th>
+                            </tr>
+                            <tr>
+                                <td><input value="512" id="total-posts" style="width: 40%;" type="number"></td>
+                                <td><input value="Account Assistant" id="postname" style="width: 100%;" type="text"></td>
+                                <td><input value="10" id="totalposts" style="width: 40%;" type="number"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onclick="addrowpost()">Add Row</button>
+                </div>
+                <div class="im">
+                    <p style="text-align: center; font-weight: bold;font-size: 20px;">Vacancy Details Table</p>
+                    <table style="width: 100%;" class="table" id="vacancy-table">
+                        <tbody>
+                            <tr>
+                                <th>Post Name</th>
+                                <th>Total Post</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="qualification">
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">Qualification</p>
+                <div class="date-fees" style="border: 1px solid;">
+                    <div class="im" style="border-right: 1px solid;">
+                        <input type="text" id="postnamelist" placeholder="Enter Post Name"><br>
+                        <textarea name="" id="postqaualification" cols="30" rows="5"
+                            placeholder="Enter Post Qualification"></textarea><br>
+                        <button onclick="qualification()">Add Row</button>
+
+                    </div>
+                    <div class="im">
+                        <p style="text-align: center; font-weight: bold;font-size: 20px;">Qualification table</p>
+                        <table class="table" style="width: 100%;" id="qualification">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">How to Fill Online Form</p><br>
+                <textarea name="" id="howtofill" cols="30" rows="5" style="width: 100%;"
+                    placeholder="How to Fill Online Form"></textarea>
+            </div>
+            <div class="other-link">
+                <p style="text-align: center; font-weight: bold;font-size: 20px;">Some Useful Important Links</p>
+                <div class="date-fees" style="border: 1px solid;">
+                    <div class="im" style="border-right: 1px solid;">
+                        <table style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Link URL</th>
+                                </tr>
+                                <tr>
+                                    <td><input id="link-title" type="text" style="width: 90%;">
+                                    </td>
+                                    <td><input id="web-link" type="html"
+                                            style="width: 90%;">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button onclick="createlink()">Add Row</button>
+                    </div>
+                    <div class="im">
+                        <p style="text-align: center; font-weight: bold;font-size: 20px;">Links</p>
+                        <table style="width: 100%;font-weight: bold;" id="link-table">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="create" style="margin: auto;text-align: center;">
+                <button onclick="createHTML()">Create HTML</button><button onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <textarea name="" id="result" rows="10" style="width: 100%;"></textarea>
+    </div>
+    <script src="java.js"></script>
+</body>
+
+</html>
