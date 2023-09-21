@@ -1,0 +1,365 @@
+#main>div:nth-child(6) {
+    display: none;
+}
+
+body {
+    padding: 0;
+    font: normal normal 16px system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    max-width: calc(960px + 80px);
+    margin: 0 auto;
+    border-top: 5px solid #84a8c1
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3
+}
+
+.menu-item a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500
+}
+
+.menu-item a:hover:not(.active) {
+    background-color: #ddd
+}
+
+.menu-item a.active {
+    color: #fff;
+    background-color: #046241
+}
+
+#HTML10 {
+    margin: auto;
+    text-align: center;
+    font-size: 47px;
+    color: #395970;
+    line-height: 60px;
+    margin-bottom: 25px
+}
+
+.fw-bold {
+    font-weight: 500
+}
+
+.navbar-brand {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: .3s;
+    text-decoration: none;
+    font-weight: 700
+}
+
+#header-main {
+    padding: 25px 0
+}
+
+#main {
+    margin: 0 10px
+}
+
+img {
+    width: 100%;
+    height: auto
+}
+
+@media (min-width: 992px) {
+    .d-lg-flex {
+        display: flex
+    }
+
+    #sidebar {
+        border-left: 1px solid #efefef
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 27.33333333%
+    }
+}
+
+h2.widget-title.position-relative.fs-6.mb-3 {
+    background-color: #f4f6f8;
+    font-size: 13px;
+    line-height: 32px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0
+}
+
+#sidebar-static div div {
+    margin: 3px
+}
+
+.breadcrumb {
+    padding: 0;
+    list-style: none
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 10px 0
+}
+
+.d-inline-block {
+    display: inline-block !important
+}
+
+.entry-meta {
+    display: flex
+}
+
+.me-3 {
+    margin: 5px 10px 5px 0
+}
+
+.jt-icon {
+    height: 1em;
+    vertical-align: -.15em;
+    width: 1em;
+    fill: #fff;
+    stroke: currentColor;
+    stroke-width: 2;
+    margin-right: 5px
+}
+
+#whatsapp svg {
+    color: #fff;
+    padding: 6px 0 2px 7px
+}
+
+#mycontent {
+    color: blue;
+    font-weight: 700
+}
+
+.post-title {
+    font-size: 15px
+}
+
+.entry-tag a {
+    margin: 2px 0px;
+    display: inline-table;
+    text-decoration: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: #000;
+    border-radius: 3px;
+    font-style: italic
+}
+
+.entry-tag {
+    margin: 15px 0
+}
+
+h1.d-none {
+    text-align: center;
+    margin: 5px;
+    font-size: 20px
+}
+
+#whatsapp {
+    border-radius: 10px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 50;
+    margin: 0;
+    bottom: 60px;
+    font-size: 20px;
+    display: block;
+    left: 10px
+}
+
+.fs-7 {
+    display: flex;
+    margin: 10px 0
+}
+
+.mb-2 li a {
+    text-decoration: none;
+    font-weight: 500
+}
+
+.categories ul li a {
+    text-decoration: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+    color: #000;
+    border-radius: 3px;
+    font-style: italic
+}
+
+.categories ul li {
+    margin: 10px 0
+}
+
+.categories ul li a:hover {
+    background: #f0f8ff;
+    transition: .2s
+}
+
+#footer,
+#footer1,
+#footer2 {
+    margin: 20px 10px
+}
+
+.pb-4.footer.section {
+    text-align: center
+}
+
+@media only screen and (max-width: 880px) {
+    .footer-bar {
+        height: auto;
+        line-height: inherit;
+        padding: 25px 0
+    }
+
+    li.menu-item {
+        display: inline-block
+    }
+
+    ul#mymenu {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    li.menu-item {
+        float: left
+    }
+}
+
+.footer-bar {
+    background-color: #f7f5f6;
+    color: #161618
+}
+
+.flex-c {
+    padding: 0 10px;
+    justify-content: center
+}
+
+.footer-bar .footer-copyright {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.footer-menu ul li {
+    list-style: none
+}
+
+.footer-menu ul li a {
+    font-size: 14px;
+    color: #161618;
+    padding: 0;
+    margin: 0 0 0 25px
+}
+
+footer a {
+    text-decoration: none
+}
+
+a:hover {
+    color: #f46013 !important
+}
+
+#back-to-top:hover {
+    background-color: #1870EB;
+    color: #FFF
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible
+}
+
+#back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 34px;
+    height: 34px;
+    background-color: #ff5b60;
+    font-size: 24px;
+    color: #FFF;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .17s ease, opacity .17s ease
+}
+
+footer {
+    font-weight: 500
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    float: left;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/")
+}
+
+.footer-bar.flex-c {
+    padding: 10px
+}
+
+@media only screen and (min-width: 600px) {
+    .flex-sb {
+        overflow: hidden;
+        margin: 0 auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.05)
+    }
+
+    #footer-menu {
+        float: right;
+        position: relative;
+        display: block;
+        line-height: 33px
+    }
+
+    .copyright-text {
+        float: left;
+        line-height: 65px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container.row-x1.flex-sb {
+        margin: auto;
+        text-align: center
+    }
+
+    .footer-menu ul {
+        flex-wrap: wrap;
+        display: inline-flex;
+        padding: 0
+    }
+}

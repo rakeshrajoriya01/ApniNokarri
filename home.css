@@ -1,0 +1,108 @@
+.second-section,
+.third-section {
+    height: 320px;
+}
+
+.first-section {
+    height: 1450px;
+}
+
+.first-section,
+.second-section,
+.third-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#sidebar {
+    display: none
+}
+
+.post-time:after {
+    content: url(//1.bp.blogspot.com/-4vV86GWCFn8/XjWbGwNDxXI/AAAAAAAABAk/gjcjBJgIZhkcAZ8hUSL_LM1nABESFcNFACNcBGAsYHQ/s1600/newicon.gif);
+    position: relative;
+    top: 3px;
+    padding: 0 4px
+}
+
+.d-lg-flex {
+    display: block !important
+}
+
+#blog-post {
+    display: none
+}
+
+@media only screen and (min-width: 800px) {
+
+    .first-container,
+    .second-container {
+        display: flex;
+        margin: 15px 0
+    }
+
+    .first-section,
+    .second-section {
+        margin: 0 10px;
+        box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+        padding: 0 0 1px;
+        border: 1px solid #f4f6f8;
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .first-section,
+    .second-section {
+        box-shadow: #900 0 1px 2px 0px, #900 0 1px 3px 1px;
+        padding: 0 0 50px;
+        border: 1px solid #f4f6f8;
+        width: 100%;
+        margin-bottom: 15px
+    }
+
+    .label-posts-container {
+        padding: 0 10px 0 0
+    }
+}
+
+.job-title {
+    text-align: center;
+    background: green;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px
+}
+
+.post-title {
+    margin: 0
+}
+
+.label-post {
+    margin: 10px 0
+}
+
+.more {
+    float: right;
+    background: #eee;
+    color: #000;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+    margin: 5px 10px
+}
+
+#before-blog {
+    margin: 10px 0
+}

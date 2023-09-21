@@ -1,0 +1,47 @@
+.more {
+    float: right;
+    background: #eee;
+    color: #000;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+    margin: 5px 10px
+}
+
+#blog-post {
+    box-shadow: #900 0 1px 2px 0px, #900 0 1px 3px 1px;
+    padding: 0 0 50px;
+    border: 1px solid #f4f6f8;
+    width: 100%;
+    margin-bottom: 15px
+}
+
+#before-blog {
+    margin: 10px 0
+}
+
+ol.breadcrumb {
+    text-align: center;
+    background: green;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500
+}
+
+ol > li:nth-child(1) {
+    display: none !important
+}
+
+ul.h-100 {
+    margin: 10px 0
+}
+
+h2.item-title.fs-5.mb-3 {
+    font-size: 15px;
+    margin: 0
+}
